@@ -3,7 +3,9 @@
 1. make sure init_folder already contains all sql files in the desired order!.
      And make sure the **file:"99-grant-privilege" is executed at last**
 
-3. Dockerfile exists under the same directory
+2. Don't forget to adjust these variables in Dockerfile: `MYSQL_ROOT_PASSWORD`, `MYSQL_USER`, `MYSQL_PASSWORD`
+
+4. Dockerfile exists under the same directory
 
 ####  to build the docker image
 3. ```docker build --progress=plain --no-cache --tag mysql-personal-project-image ./```
